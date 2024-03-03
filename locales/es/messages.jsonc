@@ -298,10 +298,10 @@
         "message": ""
     },
     "experience_countdown_update": {
-        "message": ""
+        "message": "{isSoon, select, true {<label>Event </label><time>happening soon</time>} other {<label>Event in </label> <time>{timeDuration}</time>} }"
     },
     "experience_countdown_unknown": {
-        "message": ""
+        "message": "{isSoon, select, true {<label>Un Evento </label><time>Ocurrira Pronto</time>} otro {<label>Evento en </label> <time>{timeDuration}</time>} }"
     },
 
     // The context menu "..." item that appears in the item dropdown menu to view the icon asset
@@ -1266,7 +1266,7 @@
     },
 
     "discover_tryexactmatch": {
-        "message": ""
+        "message": "¿No encuentra lo que busca? Pruebe con una <boldText>búsqueda de coincidencia exacta</boldText> encerrando la palabra clave entre comillas dobles: {newKeyword}"
     },
 
     // Discover filters labels and dropdown values stuff
@@ -1637,34 +1637,34 @@
 
     // Better "Experience Notifications" section
     "robloxsettings_experiencenotifications_title": {
-        "message": ""
+        "message": "Notificaciones De Experiencias"
     },
     "robloxsettings_experiencenotifications_description": {
-        "message": ""
+        "message": "Actualizaciones de actividad de las experiencias para las que has activado las notificaciones"
     },
     // when the user hasn't followed any experiences yet
     "robloxsettings_experiencenotifications_noexperiences": {
-        "message": ""
+        "message": "Aún no has seguido ninguna experiencia."
     },
     "robloxsettings_experiencenotifications_experience_by": {
-        "message": ""
+        "message": "Por {mention}"
     },
     "robloxsettings_experiencenotifications_experience_since": {
-        "message": ""
+        "message": "Desde {date}"
     },
     // not actually the last updated date.... it's the last time the developer pushed out an update to push notifications
     // via Experience Updates
     "robloxsettings_experiencenotifications_experience_lastupdated": {
-        "message": ""
+        "message": "Última actualización {date}"
     },
     "robloxsettings_experiencenotifications_experience_unfollow": {
-        "message": ""
+        "message": "Dejar de seguir"
     },
     "robloxsettings_experiencenotifications_remove_systemfeedback_error": {
-        "message": ""
+        "message": "Estás desactivando las notificaciones de experiencia demasiado rápido, por favor, ve más despacio e inténtalo de nuevo."
     },
     "robloxsettings_experiencenotifications_add_systemfeedback_error": {
-        "message": ""
+        "message": "Estás activando las notificaciones de experiencia demasiado rápido, por favor, ve más despacio e inténtalo de nuevo."
     },
 
     // Marketplace Color filters UI
@@ -2171,7 +2171,7 @@
         "message": "Cuando se habilita, agrega una sección de Filtros a la página de Descubrimiento. Permite filtrar todo tipo de contenido por porcentaje de gustos, cantidad de favoritos, cantidad de jugadores, cantidad de visitas y género."
     },
     "features_DiscoverTryExactMatch_title": {
-        "message": ""
+        "message": "Sugerir probar la búsqueda de coincidencia exacta"
     },
     "features_RoSealSettingDropdown_title": {
         "message": "Elemento \"Configuración de RoSeal\" en el menú desplegable de configuración de Roblox"
@@ -2255,7 +2255,7 @@
         "message": "Permitir la visualización de los detalles de los activos fuera de venta en la Tienda del Creador"
     },
     "features_ViewItemBundle_title": {
-        "message": ""
+        "message": "Mostrar el paquete del que procede un artículo"
     },
     "features_HideModelsCreations_title": {
         "message": "Establecer el estado de visibilidad de Modelos y Paquetes en su perfil"
@@ -2333,10 +2333,10 @@
         "message": "Cuando se activa esta opción, se añaden hipervínculos, la fecha de la última actualización y las notificaciones activadas desde esa fecha a las experiencias de la categoría \"Notificaciones de experiencias\" de Notificaciones en Configuración de la cuenta."
     },
     "features_ExperienceCountdowns_title": {
-        "message": ""
+        "message": "Lanzamiento/actualización/recuento de eventos en las páginas de detalles de la experiencia"
     },
     "features_ExperienceCountdowns_description": {
-        "message": ""
+        "message": "Cuando está activada, añade una cuenta atrás de lanzamiento/actualización/evento en las experiencias elegibles encima del botón de jugar o donde estaría. Cuando una experiencia con una cuenta atrás de lanzamiento se publique, la cuenta atrás se eliminará y el botón Reproducir se actualizará automáticamente. Las cuentas atrás de eventos se tratan como cuentas atrás de lanzamiento y sólo se muestran cuando la experiencia no ha sido lanzada."
     },
 
     "popup_extensionname": {
@@ -2394,7 +2394,7 @@
     },
 
     "popup_languageswitcher_title": {
-        "message": ""
+        "message": "Seleccionar Idioma"
     },
     // i.e. "American English (default)"
     "popup_languageswitcher_defaulttext": {
