@@ -2336,7 +2336,7 @@
         "message": "Lanzamiento/actualización/recuento de eventos en las páginas de detalles de la experiencia"
     },
     "features_ExperienceCountdowns_description": {
-        "message": "Cuando está activada, añade una cuenta atrás de lanzamiento/actualización/evento en las experiencias elegibles encima del botón de jugar o donde estaría. Cuando una experiencia con una cuenta atrás de lanzamiento se publique, la cuenta atrás se eliminará y el botón Reproducir se actualizará automáticamente. Las cuentas atrás de eventos se tratan como cuentas atrás de lanzamiento y sólo se muestran cuando la experiencia no ha sido lanzada."
+        "message": "Cuando está activada, añade una cuenta atrás de lanzamiento/actualización/evento en las experiencias elegibles encima del botón de jugar o donde estaría. Cuando una experiencia con una cuenta atrás de lanzamiento se publique, la cuenta atrás se eliminará y el botón de jugar se actualizará automáticamente. Las cuentas atrás de eventos se tratan como cuentas atrás de lanzamiento y sólo se muestran cuando la experiencia no ha sido lanzada."
     },
 
     "popup_extensionname": {
