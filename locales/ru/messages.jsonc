@@ -65,6 +65,17 @@
         "message": "Вернуться в настройки Roblox"
     },
 
+    "settings_languageswitcher_title": {
+        "message": "Язык RoSeal"
+    },
+    // i.e. "American English (default)"
+    "settings_languageswitcher_defaulttext": {
+        "message": " (по умолч.)"
+    },
+    "settings_languageswitcher_changenotice": {
+        "message": "Для того чтобы изменения вступили в силу, может потребоваться несколько раз обновить страницу."
+    },
+
     // "About" selection in menu and title
     "settings_selection_about": {
         "message": "Об RoSeal"
@@ -295,13 +306,13 @@
     },
 
     "experience_countdown_release": {
-        "message": ""
+        "message": "{isSoon, select, true {<label>Выйдет</label> <time>скоро</time>} other {<label>Выйдет через</label> <time>{timeDuration}</time>} }"
     },
     "experience_countdown_update": {
-        "message": ""
+        "message": "{isSoon, select, true {<label>Обновление выйдет</label> <time>очень скоро</time>} other {<label>Обновление выйдет через</label> <time>{timeDuration}</time>} }"
     },
     "experience_countdown_unknown": {
-        "message": ""
+        "message": "{isSoon, select, true {<label>Событие</label> <time>произойдет очень скоро</time>} other {<label>Событие появится через</label> <time>{timeDuration}</time>} }"
     },
 
     // The context menu "..." item that appears in the item dropdown menu to view the icon asset
@@ -651,8 +662,14 @@
     "collectibleasset_collectibleitemid": {
         "message": "ID коллекционного предмета"
     },
+    "bundle_collectibleitemid": {
+        "message": "ID коллекционного предмета"
+    },
     // The collectible product UUID ID
     "collectibleasset_collectibleproductid": {
+        "message": "ID коллекционного продукта"
+    },
+    "bundle_collectibleproductid": {
         "message": "ID коллекционного продукта"
     },
 
@@ -664,6 +681,11 @@
     // "Refresh Item Details" tooltip when hovering over the refresh icon under the three dots (...)
     "avataritem_refreshdetails": {
         "message": "Обновить раздел предмета"
+    },
+
+    // Off sale timer for avatar items that will appear under the Price, countdown is automatically translated
+    "avataritem_saletimer": {
+        "message": "Прекращение продаж через {countdown}"
     },
 
     // Shows instead of just the time, updatedTime is when item was updated
@@ -784,8 +806,8 @@
     },
 
     // Shown over the Play button to indicate to the user that their avatar may not be as intended in the experience
-    "experience_avatarrestricted": {
-        "message": "Ваш текущий аватар может выглядеть или функционировать не так, как задумывалось в этой игре."
+    "experience_avatarrestricted2": {
+        "message": "Ваш аватар может быть изменён в этой игре"
     },
     // Table header items, "Field" in this context, is like part of an avatar, avatar type, body, proportion, etc.
     "experience_avatarrestricted_compare_field": {
@@ -926,8 +948,11 @@
         "message": "{sealEmoji} Вы покидаете Roblox"
     },
     // Modal shown when clicking the button to warn the user
-    "experience_communitywiki_modal_body": {
-        "message": "Обратите внимание - Нажимая на кнопку “продолжить,” вы будете перенаправлены на сайт Fandom, который не принадлежит Roblox и не управляется им. У них могут быть другие условия и политика конфиденциальности..{lineBreak}{lineBreak}Неофициальная вики сообщество, на которую вы будете перенаправлены, является частью проекта Roblox Interwiki по фэндому и зависит от правок сообщества. Информация может быть противоречивой, или устаревшей.."
+    "experience_communitywiki_modal_body_fandom": {
+        "message": "Обратите внимание - Нажимая на кнопку “продолжить,” вы будете перенаправлены на сайт Fandom, который не принадлежит Roblox и не управляется им. У них могут быть другие условия и политика конфиденциальности.{lineBreak}{lineBreak}Неофициальная вики сообщество, на которую вы будете перенаправлены, основана на правках сообщества. Информация может быть противоречивой, или устаревшей.."
+    },
+    "experience_communitywiki_modal_body_other": {
+        "message": "Обратите внимание - Нажимая на кнопку “продолжить,” вы будете перенаправлены на сайт {wikiDomain}, который не принадлежит Roblox и не управляется им. У них могут быть другие условия и политика конфиденциальности.{lineBreak}{lineBreak}Неофициальная вики сообщество, на которую вы будете перенаправлены, основана на правках сообщества. Информация может быть противоречивой, или устаревшей.."
     },
     "experience_communitywiki_modal_action": {
         "message": "Продолжить"
@@ -993,6 +1018,11 @@
     // "View Thumbnail Asset" button shown in the lower right side on experience thumbnails if available.
     "experience_media_viewthumbnailasset": {
         "message": "Просмотреть баннер"
+    },
+
+    // Shown in inventory when an item is hidden, like LIMITED or LIMITED UNIQUE tags
+    "itemtag_hidden": {
+        "message": "HIDDEN"
     },
 
     // Funny little home header secret messages that can be shown despite the user's role
@@ -1087,10 +1117,10 @@
         "message": "ммм... ням-ням?"
     },
     "homeheader_secretmessage_Default31": {
-        "message": ""
+        "message": "The Hunt... уже здесь.."
     },
     "homeheader_secretmessage_Default32": {
-        "message": ""
+        "message": "jabba the hunt"
     },
 
     // Additional text shown if the user is in the "BetaTester" role. These are users that signed up for it on the DevForum.
@@ -1220,13 +1250,13 @@
         "message": "умолчанию"
     },
     "chat_sorttypes_type_NewestFirst": {
-        "message": "сначала новые"
+        "message": "сначала новым"
     },
     "chat_sorttypes_type_OldestFirst": {
-        "message": "сначала старые"
+        "message": "сначала старым"
     },
     "chat_sorttypes_type_UnreadFirst": {
-        "message": "непрочитанные"
+        "message": "непрочитанным"
     },
 
     // The pass created/updated text
@@ -1266,7 +1296,7 @@
     },
 
     "discover_tryexactmatch": {
-        "message": ""
+        "message": "Не смогли найти, что нужно? Попробуйте ввести запрос <boldText>по точному поиску</boldText> взяв ключевое слово в двойные кавычки: {newKeyword}"
     },
 
     // Discover filters labels and dropdown values stuff
@@ -1701,6 +1731,87 @@
         "message": "Создать группу"
     },
 
+    "assetdependencies_title": {
+        "message": "Изменения"
+    },
+    "assetdependencies_item_by": {
+        "message": "От {creator}"
+    },
+    // label before the verison input
+    "assetdependencies_version": {
+        "message": "Версия: "
+    },
+    "assetdependencies_noresults": {
+        "message": "Не найдена версия или изменения отсувствуют"
+    },
+
+    "avatar_bodycolors_or": {
+        "message": "ИЛИ"
+    },
+    "avatar_bodycolors_hint": {
+        "message": "Нажмите на кружок, чтобы открыть расширенный палитр цветов"
+    },
+    "avatar_wearoutfit_error_invalidassets": {
+        "message": "Количество предметов, которых нет в костюме: {count}"
+    },
+    "avatar_wearoutfit_error": {
+        "message": "Не получилось надеть костюм."
+    },
+    "avatar_wearoutfit_success": {
+        "message": "Костюм надет."
+    },
+    "avatar_createoutfit_title": {
+        "message": "Создать новый костюм"
+    },
+    "avatar_createoutfit_placeholder": {
+        "message": "Название костюма"
+    },
+    "avatar_createoutfit_description": {
+        "message": "Костюм будет создан на основе текущего аватара."
+    },
+    "avatar_createoutfit_notice": {
+        "message": "Название может содержать только буквы, цифры и пробелы."
+    },
+    "avatar_createoutfit_success": {
+        "message": "Костюм успешно создан."
+    },
+    "avatar_createoutfit_error_name": {
+        "message": "Название костюма недопустимо."
+    },
+    "avatar_createoutfit_error_max": {
+        "message": "Вы превысили лимит на количество костюмов."
+    },
+    "avatar_createoutfit_error": {
+        "message": "Не удалось создать костюм."
+    },
+    "avatar_createoutfit_action": {
+        "message": "Создать"
+    },
+    "avatar_createoutfit_neutral": {
+        "message": "Отменить"
+    },
+    "avatar_updateoutfit_title": {
+        "message": "Обновить костюм"
+    },
+    "avatar_updateoutfit_description": {
+        "message": "Вы хотите обновить этот костюм? Это приведет к перезаписи с текущим внешним видом вашего аватара."
+    },
+    "avatar_updateoutfit_action": {
+        "message": "Обновить"
+    },
+    "avatar_updateoutfit_neutral": {
+        "message": "Отменить"
+    },
+    "avatar_updateoutfit_success": {
+        "message": "Костюм успешно обновлен."
+    },
+    "avatar_updateoutfit_error_nolongerexists": {
+        "message": "Костюм больше не существует."
+    },
+    "avatar_updateoutfit_error": {
+        "message": "Не удалось обновить костюм."
+    },
+
     // For the next messages, R2E = Right to Erasure
 
     // pending in button when fetching R2Es
@@ -1838,11 +1949,14 @@
     "features_section_miscellaneous": {
         "message": "Другое"
     },
+    "features_section_miscellaneous_avatar": {
+        "message": "Аватар"
+    },
     "features_section_miscellaneous_general": {
         "message": "Общее"
     },
     "features_section_miscellaneous_transactionspage": {
-        "message": "Страница операций"
+        "message": "Страница транзакций"
     },
     "features_section_miscellaneous_animals": {
         "message": "Животные"
@@ -1894,6 +2008,37 @@
     "features_RefreshedHomeUserHeader_description": {
         "message": "Когда включено, возвращает старый заголовок пользователя на страницу \"Главная\", но с некоторыми отличиями."
     },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_title": {
+        "message": "Размер аватарок"
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_values_Small": {
+        "message": "Маленькие"
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_values_Medium": {
+        "message": "Средние"
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_values_Large": {
+        "message": "Большие"
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_values_ExtraLarge": {
+        "message": "Очень большие"
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarType_title": {
+        "message": "Размер аватара"
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarType_values_Avatar": {
+        "message": "Все тело"
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarType_values_AvatarHeadShot": {
+        "message": "Только лицо"
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarType_values_AvatarBust": {
+        "message": "Выше груди"
+    },
+    "features_RefreshedHomeUserHeader_sub_HasBackground_title": {
+        "message": "Добавлять белый фон"
+    },
+
     "features_RefreshedHomeUserHeader_sub_BasedText_title": {
         "message": "10%-тный шанс получить случайное сообщение на основе ваших публичных ролей"
     },
@@ -1914,9 +2059,6 @@
     },
     "features_RefreshedHomeUserHeader_sub_ShowNameType_values_Username": {
         "message": "Только никнейм"
-    },
-    "features_MoveExperienceSocialLinks_title": {
-        "message": "Переместить социальные ссылки на страницу игры над описанием в разделе \"О игре\""
     },
     "features_AddCommunityWikiButton_title": {
         "message": "Добавить кнопку для посещения неофициальной вики сообщества игры в разделе \"О игре\""
@@ -2060,7 +2202,7 @@
         "message": "При включении этой опции в поле \"Chat\" добавляются новые типы сортировки для фильтрации разговоров."
     },
     "features_Transactions0RobuxAmountToggle_title": {
-        "message": "Включите чтобы спрятать транкзакции с суммой 0 Робуксов"
+        "message": "Включите чтобы спрятать транкзакции с суммой 0 R$"
     },
     "features_TransactionsPrivateServersToggle_title": {
         "message": "Включите чтобы спрятать транзакции связанные с Приватными серверами"
@@ -2084,7 +2226,7 @@
         "message": "Отключить раздел значков от Roblox"
     },
     "features_UserProfileLastOnline_title": {
-        "message": "Показывать дату последнего выхода в профиле пользователя"
+        "message": "Показывать дату последнего онлайна в профиле пользователя"
     },
     "features_ChangeNavFriendsHash_title": {
         "message": "Изменить вкладку друзей пользователей по умолчанию на панели навигации"
@@ -2132,7 +2274,7 @@
         "message": "Отключить"
     },
     "features_BunnyErrorPage_title": {
-        "message": "Заменять ошибки на страницах ошибок изображением ошибки из устаревшей версии Developer Hub."
+        "message": "Заменять ошибки страниц из старых картинок Developer Hub."
     },
     "features_ExperienceMediaAltTextButton_title": {
         "message": "Улучшение работы с кнопкой ALT для картинок"
@@ -2147,7 +2289,7 @@
         "message": "Кнопка \"Удалить из инвентаря\" на странице \"Просмотр иконки\" "
     },
     "features_AssetDeleteFromInventory_description": {
-        "message": "Когда функция включена в меню элементов иконки добавляется кнопка \"Удалить из инвентаря\", если её там нет. Из-за безопасности аккаунта потребуется 2FA подтверждение."
+        "message": "Когда функция включена в меню элементов иконки добавляется кнопка \"Удалить из инвентаря\", если её там нет. Из-за безопасности аккаунта может потребуется 2FA подтверждение."
     },
     "features_UserFriendsPageNewTitle_title": {
         "message": "Показывать имя пользователя в заголовке страницы друзей"
@@ -2171,7 +2313,7 @@
         "message": "Когда функция включена, на страницу Discover добавляется раздел Фильтры. Он позволяет отфильтровать всевозможные варианты по проценту \"нравится\", количеству избранных, количеству игроков, количеству посещений и жанру."
     },
     "features_DiscoverTryExactMatch_title": {
-        "message": ""
+        "message": "Предлагать поиск по точному совпадению"
     },
     "features_RoSealSettingDropdown_title": {
         "message": "\"Настройки RoSeal\" в списке настроек Roblox"
@@ -2201,7 +2343,7 @@
         "message": "Цветовые фильтры в Каталоге"
     },
     "features_RefreshAvatarItemDetails_sub_FastFreeBuy_title": {
-        "message": "Быстрая покупка предметов в Каталоге"
+        "message": "Быстрая покупка предметов в Marketplace"
     },
     "features_RemoveFriendActivityLabel_title": {
         "message": "Убрать текст \"Friends playing\" под играми на главной странице"
@@ -2218,14 +2360,20 @@
     "features_PutHomeFavoritesSortAtTop_title": {
         "message": "Переместить категорию \"Favorites\" наверх на главной странице"
     },
+    "features_PutHomeContinueSortAtTop_title": {
+        "message": "Поместить сортировку \"Continue\" наверх"
+    },
+    "features_PutHomeFriendsAtTop_title": {
+        "message": "Переместить список друзей на самый вверх на главной странице"
+    },
     "features_ShowVoiceChatSuspension_title": {
-        "message": "Показать детали приостановки голосового чата и полную дату"
+        "message": "Показывать детали приостановки голосового чата и полную дату"
     },
     "features_ShowVoiceChatSuspension_description": {
         "message": "При включении этой функции на всех страницах отображается модальное окно с информацией о приостановке голосового чата, если пользователь еще не был проинформирован. Он также добавляет полную дату истечения срока приостановки на страницу настроек учетной записи конфиденциальности."
     },
     "features_SearchByCreatorButton_title": {
-        "message": "Кнопка поиска дополнительных предметов рядом с никнеймом создателя"
+        "message": "Кнопка поиска предметов от того же создателя рядом с его никнеймом"
     },
     "features_PrivateServerLinksSection_title": {
         "message": "Добавить раздел в вкладке серверов \"Ссылки на приватные сервера\""
@@ -2253,6 +2401,9 @@
     },
     "features_CreatorMarketplaceViewOffSaleAssetPage_title": {
         "message": "Разрешить просмотр информации активов которые не в продаже в Creator Marketplace"
+    },
+    "features_CreatorMarketplaceViewOffSaleAssetPage_sub_PrioritizeStore_title": {
+        "message": "Использовать Creator Store вместо /library страницы активов"
     },
     "features_ViewItemBundle_title": {
         "message": "Показывать набор, с которым связан какой-либо предмет"
@@ -2327,16 +2478,31 @@
         "message": "Предоставляя это разрешение, вы разрешаете RoSeal автоматически перенаправлять на страницу RoSeal для просмотра подробностей о скрытых предметах аватара, а не на Marketplace."
     },
     "features_BetterExperienceNotificationsList_title": {
-        "message": ""
+        "message": "Улучшенный список уведомлений об обновлениях игр"
     },
     "features_BetterExperienceNotificationsList_description": {
-        "message": ""
+        "message": "Когда функция включена, она добавляет гиперссылки, дату последнего обновления и уведомления, включенные с этой даты в категории \"Уведомления об обновлениях игр\" в разделе \"Уведомления\" в настройках аккаунта."
     },
     "features_ExperienceCountdowns_title": {
-        "message": ""
+        "message": "Отображать на страницах игр информацию об \"Релизах/обновлениях/событиях\""
     },
     "features_ExperienceCountdowns_description": {
-        "message": ""
+        "message": "Когда включена, добавляет обратный отсчет времени выхода/обновления/события на соответствующих играх над кнопкой \"Play\" или там, где она должна быть. Когда обратный отсчет релиза закончится, он будет удален, а кнопка \"Play\" автоматически обновится. Отсчеты событий считаются как отсчеты обновлений."
+    },
+    "features_BodyColors3s_title": {
+        "message": "Разрешить настройку цветов аватара с помощью HEX цветов"
+    },
+    "features_AvatarItemViewSaleTimer_title": {
+        "message": "Разрешить просматривать скрытый таймер на предметах для аватара с ограниченным сроком продажи"
+    },
+    "features_ViewAvatarAssetDependencies_title": {
+        "message": "Просмотр изменений в предмете"
+    },
+    "features_FixDeeplinks_title": {
+        "message": "Исправить кнопку \"Play\" в играх"
+    },
+    "features_FixDeeplinks_description": {
+        "message": "Когда включено, исправляет ошибку Roblox которая не позволяла запустить игру (ссылки, напрямую запускающие Roblox) в некоторых случаях, также добавляется поддержка присоединения к определённым серверам (через параметр gameInstanceId)."
     },
 
     "popup_extensionname": {
@@ -2396,12 +2562,8 @@
     "popup_languageswitcher_title": {
         "message": "Сменить язык"
     },
-    // i.e. "American English (default)"
-    "popup_languageswitcher_defaulttext": {
-        "message": "(по умолч.)"
-    },
-    "popup_languageswitcher_changenotice": {
-        "message": "Для того чтобы изменения вступили в силу, может потребоваться несколько раз обновить страницу."
+    "popup_languageswitcher_moved": {
+        "message": " (по умолч.)"
     },
 
     // Display in the RoSeal popup and in settings.

@@ -65,6 +65,17 @@
         "message": "Retourner au Paramètres Roblox"
     },
 
+    "settings_languageswitcher_title": {
+        "message": ""
+    },
+    // i.e. "American English (default)"
+    "settings_languageswitcher_defaulttext": {
+        "message": ""
+    },
+    "settings_languageswitcher_changenotice": {
+        "message": ""
+    },
+
     // "About" selection in menu and title
     "settings_selection_about": {
         "message": "À propos de RoSeal"
@@ -651,9 +662,15 @@
     "collectibleasset_collectibleitemid": {
         "message": "ID de l'objet à collectionner"
     },
+    "bundle_collectibleitemid": {
+        "message": ""
+    },
     // The collectible product UUID ID
     "collectibleasset_collectibleproductid": {
         "message": "ID du produit à collectionner"
+    },
+    "bundle_collectibleproductid": {
+        "message": ""
     },
 
     // The developer product's numeric product ID
@@ -664,6 +681,11 @@
     // "Refresh Item Details" tooltip when hovering over the refresh icon under the three dots (...)
     "avataritem_refreshdetails": {
         "message": "Actualiser les détails de l'article"
+    },
+
+    // Off sale timer for avatar items that will appear under the Price, countdown is automatically translated
+    "avataritem_saletimer": {
+        "message": ""
     },
 
     // Shows instead of just the time, updatedTime is when item was updated
@@ -784,8 +806,8 @@
     },
 
     // Shown over the Play button to indicate to the user that their avatar may not be as intended in the experience
-    "experience_avatarrestricted": {
-        "message": "Votre avatar actuel peut ne pas ressembler ou fonctionner comme prévu dans cette expérience."
+    "experience_avatarrestricted2": {
+        "message": ""
     },
     // Table header items, "Field" in this context, is like part of an avatar, avatar type, body, proportion, etc.
     "experience_avatarrestricted_compare_field": {
@@ -926,8 +948,11 @@
         "message": "{sealEmoji} Vous quittez Roblox"
     },
     // Modal shown when clicking the button to warn the user
-    "experience_communitywiki_modal_body": {
-        "message": "Attention, Robloxien - en cliquant sur 'Continuer', vous serez redirigé vers Fandom, qui n'appartient ni n'est exploité par Roblox. Ils peuvent avoir des conditions et des politiques de confidentialité différentes.{lineBreak}{lineBreak}Le wiki non officiel de la Communautée vers lequel vous serez redirigé fait partie du projet Roblox Interwiki sur Fandom et s'appuie sur les modifications de la communauté. Les informations peuvent être controversées, vandalisées, obsolètes ou manipulées."
+    "experience_communitywiki_modal_body_fandom": {
+        "message": ""
+    },
+    "experience_communitywiki_modal_body_other": {
+        "message": ""
     },
     "experience_communitywiki_modal_action": {
         "message": "Continuer"
@@ -993,6 +1018,11 @@
     // "View Thumbnail Asset" button shown in the lower right side on experience thumbnails if available.
     "experience_media_viewthumbnailasset": {
         "message": "Afficher la page de la miniature"
+    },
+
+    // Shown in inventory when an item is hidden, like LIMITED or LIMITED UNIQUE tags
+    "itemtag_hidden": {
+        "message": ""
     },
 
     // Funny little home header secret messages that can be shown despite the user's role
@@ -1701,6 +1731,87 @@
         "message": "Créer un groupe"
     },
 
+    "assetdependencies_title": {
+        "message": ""
+    },
+    "assetdependencies_item_by": {
+        "message": ""
+    },
+    // label before the verison input
+    "assetdependencies_version": {
+        "message": ""
+    },
+    "assetdependencies_noresults": {
+        "message": ""
+    },
+
+    "avatar_bodycolors_or": {
+        "message": ""
+    },
+    "avatar_bodycolors_hint": {
+        "message": ""
+    },
+    "avatar_wearoutfit_error_invalidassets": {
+        "message": ""
+    },
+    "avatar_wearoutfit_error": {
+        "message": ""
+    },
+    "avatar_wearoutfit_success": {
+        "message": ""
+    },
+    "avatar_createoutfit_title": {
+        "message": ""
+    },
+    "avatar_createoutfit_placeholder": {
+        "message": ""
+    },
+    "avatar_createoutfit_description": {
+        "message": ""
+    },
+    "avatar_createoutfit_notice": {
+        "message": ""
+    },
+    "avatar_createoutfit_success": {
+        "message": ""
+    },
+    "avatar_createoutfit_error_name": {
+        "message": ""
+    },
+    "avatar_createoutfit_error_max": {
+        "message": ""
+    },
+    "avatar_createoutfit_error": {
+        "message": ""
+    },
+    "avatar_createoutfit_action": {
+        "message": ""
+    },
+    "avatar_createoutfit_neutral": {
+        "message": ""
+    },
+    "avatar_updateoutfit_title": {
+        "message": ""
+    },
+    "avatar_updateoutfit_description": {
+        "message": ""
+    },
+    "avatar_updateoutfit_action": {
+        "message": ""
+    },
+    "avatar_updateoutfit_neutral": {
+        "message": ""
+    },
+    "avatar_updateoutfit_success": {
+        "message": ""
+    },
+    "avatar_updateoutfit_error_nolongerexists": {
+        "message": ""
+    },
+    "avatar_updateoutfit_error": {
+        "message": ""
+    },
+
     // For the next messages, R2E = Right to Erasure
 
     // pending in button when fetching R2Es
@@ -1838,6 +1949,9 @@
     "features_section_miscellaneous": {
         "message": "Divers"
     },
+    "features_section_miscellaneous_avatar": {
+        "message": ""
+    },
     "features_section_miscellaneous_general": {
         "message": "Général"
     },
@@ -1894,6 +2008,37 @@
     "features_RefreshedHomeUserHeader_description": {
         "message": "Lorsqu'il est activé, renvoie l'ancien en-tête d'utilisateur sur la page d'accueil avec quelques différences."
     },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_title": {
+        "message": ""
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_values_Small": {
+        "message": ""
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_values_Medium": {
+        "message": ""
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_values_Large": {
+        "message": ""
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarSize_values_ExtraLarge": {
+        "message": ""
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarType_title": {
+        "message": ""
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarType_values_Avatar": {
+        "message": ""
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarType_values_AvatarHeadShot": {
+        "message": ""
+    },
+    "features_RefreshedHomeUserHeader_sub_AvatarType_values_AvatarBust": {
+        "message": ""
+    },
+    "features_RefreshedHomeUserHeader_sub_HasBackground_title": {
+        "message": ""
+    },
+
     "features_RefreshedHomeUserHeader_sub_BasedText_title": {
         "message": "10 % de chances d'obtenir un message choisi en fonction de vos rôles publics"
     },
@@ -1914,9 +2059,6 @@
     },
     "features_RefreshedHomeUserHeader_sub_ShowNameType_values_Username": {
         "message": ""
-    },
-    "features_MoveExperienceSocialLinks_title": {
-        "message": "Déplacez les liens sociaux de l'expérience au-dessus de la description dans l'onglet À propos"
     },
     "features_AddCommunityWikiButton_title": {
         "message": "Ajouter un bouton pour visiter un wiki communautaire non officiel d'une expérience dans l'onglet À propos"
@@ -2218,6 +2360,12 @@
     "features_PutHomeFavoritesSortAtTop_title": {
         "message": ""
     },
+    "features_PutHomeContinueSortAtTop_title": {
+        "message": ""
+    },
+    "features_PutHomeFriendsAtTop_title": {
+        "message": ""
+    },
     "features_ShowVoiceChatSuspension_title": {
         "message": ""
     },
@@ -2252,6 +2400,9 @@
         "message": ""
     },
     "features_CreatorMarketplaceViewOffSaleAssetPage_title": {
+        "message": ""
+    },
+    "features_CreatorMarketplaceViewOffSaleAssetPage_sub_PrioritizeStore_title": {
         "message": ""
     },
     "features_ViewItemBundle_title": {
@@ -2338,6 +2489,21 @@
     "features_ExperienceCountdowns_description": {
         "message": ""
     },
+    "features_BodyColors3s_title": {
+        "message": ""
+    },
+    "features_AvatarItemViewSaleTimer_title": {
+        "message": ""
+    },
+    "features_ViewAvatarAssetDependencies_title": {
+        "message": ""
+    },
+    "features_FixDeeplinks_title": {
+        "message": ""
+    },
+    "features_FixDeeplinks_description": {
+        "message": ""
+    },
 
     "popup_extensionname": {
         "message": "{sealEmoji} RoSeal"
@@ -2396,11 +2562,7 @@
     "popup_languageswitcher_title": {
         "message": ""
     },
-    // i.e. "American English (default)"
-    "popup_languageswitcher_defaulttext": {
-        "message": ""
-    },
-    "popup_languageswitcher_changenotice": {
+    "popup_languageswitcher_moved": {
         "message": ""
     },
 
